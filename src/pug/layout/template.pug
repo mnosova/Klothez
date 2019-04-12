@@ -1,0 +1,29 @@
+include ../mixins
+- var SiteName = 'Site Name'
+block variables
+
+
+
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="utf-8")
+        title= SiteName + ' / ' + PageTitle
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no")
+        meta(name="keywords" content="")
+        meta(name='description', content='')
+        block head
+        block styles
+            link(rel="stylesheet", href="css/style.min.css")
+    body
+        .content
+            include ../modules/header
+            .page(class=pageClass)
+                |
+                block content
+            include ../modules/footer
+        block scripts
+            script(src="js/jquery.min.js", type="text/javascript")

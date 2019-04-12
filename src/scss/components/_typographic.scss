@@ -1,0 +1,70 @@
+
+//FONTS
+$lora-reg: 'loraregular';
+@font-face {
+  font-family: 'loraregular';
+  src: url('#{$url-font}lora-regular-webfont.eot');
+  src: url('#{$url-font}lora-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('#{$url-font}lora-regular-webfont.woff2') format('woff2'),
+  url('#{$url-font}lora-regular-webfont.woff') format('woff'),
+  url('#{$url-font}lora-regular-webfont.ttf') format('truetype'),
+  url('#{$url-font}lora-regular-webfont.svg#loraregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+//font size settings
+
+
+html, body {
+  //line-height: 2.5em;
+  font-size: 16px;
+}
+
+@include media-breakpoint-up(md) {
+  html, body {
+
+    font-size: 14px !important;
+  }
+}
+
+@include media-breakpoint-up(sm){
+  html, body {
+    font-size: 12px !important;
+  }
+}
+
+
+//LINKS
+a {
+  color: $black;
+  cursor: pointer;
+  &:visited {
+    //color: $gray;
+  }
+  &:hover {
+    color: $dark-gray;
+    text-decoration: none;
+
+  }
+  &:active {
+    color: $light-gray;
+
+  }
+}
+
+//TEXT
+
+p {
+
+  font-size: $fz-lg;
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+
+//usage class
+.center-text {
+  text-align: center;
+}
