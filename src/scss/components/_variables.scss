@@ -8,20 +8,20 @@ $url-icons:  "../img/icons/";
 
 
 //FONT-SIZE
+$fz: 14px;
 $fz-lg: 18px;
-$fz-md: 16px;
-$fz-sm: 14px;
-$fz-xs: 12px;
+$fz-sm:12px;
+//$fz-md: 16px;
+//$fz-sm: 14px;
+//$fz-xs: 12px;
 
 $lg-text: 40px;
 $sm-text: 40px;
 
-$h1: 2.25rem;
-$h2: 1.1875rem;
-$h3: 1.625px;
-$h4: 1.375px;
-$h5: 1.25px;
-$h6: 1.125px;
+$h1:36px;
+$h2: 18px;
+$h3: 24px;
+
 
 
 //CONTAINER
@@ -30,18 +30,18 @@ $h6: 1.125px;
 //COLORS
 $black : #000;
 $white : #fff;
+$element-bg-color: #ededed;
+$element-btn-color: #f1df5e;
+$error: #f82c4b;
+
 $light-gray : #f4f4f4;
-$gray : #ddd;
 $input : #ddd;
 $dark-gray : #ccc;
-$dark-red : #990000;
-$error : #e15433;
 $success : #20a86b;
 $bgcolor : #0b172a;
 $main-text : #7A8F99;
 
-
-$enable-grid-classes:       true !default;
+$enable-grid-classes:true !default;
 
 
 
@@ -52,10 +52,8 @@ $enable-grid-classes:       true !default;
 
 $grid-breakpoints: (
         xxs: 0,
-        xs: 573px,
-        sm: 764px,
-        md: 991px,
-        lg: 1079px
+        sm: 960px,
+
 ) !default;
 
 @import "../mixins/grid/functions";
@@ -69,14 +67,13 @@ $grid-breakpoints: (
 
 $container-max-widths: (
 
-        lg: 880px,
-        md: 90%
+        sm: 90%
   //xs: 90%,
   //sm: 880px,
 
 ) !default;
 
-$container-start-width: 930px;
+$container-start-width: 860px;
 
 //@include _assert-ascending($container-max-widths, "$container-max-widths");
 
@@ -86,25 +83,8 @@ $container-start-width: 930px;
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$gutter: 0.9375rem;
+$gutter: 1.25rem;
 
-//slick carousel
-$max-width-slick: 700px;
-$dots-size: 10px;
-$dots-color: black;
-$dots-select-opacity: 0.75;
-$dots-unselect-opacity: 0.25;
-$dots-margin: 5px;
-$pagination-font-size: 18px;
-$pagination-color: $dots-color;
-$pagination-select-opacity: $dots-select-opacity;
-$pagination-unselect-opacity: $dots-unselect-opacity;
-$pagination-margin: $dots-margin;
-$arrow-size: 20px;
-$arrow-color: $dots-color;
-$arrow-font-size: 35px;
-$arrow-select-opacity: $dots-select-opacity;
-$arrow-unselect-opacity: $dots-unselect-opacity;
 
 
 

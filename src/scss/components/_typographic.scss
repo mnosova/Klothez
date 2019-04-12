@@ -1,24 +1,11 @@
 
-//FONTS
-$lora-reg: 'loraregular';
-@font-face {
-  font-family: 'loraregular';
-  src: url('#{$url-font}lora-regular-webfont.eot');
-  src: url('#{$url-font}lora-regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('#{$url-font}lora-regular-webfont.woff2') format('woff2'),
-  url('#{$url-font}lora-regular-webfont.woff') format('woff'),
-  url('#{$url-font}lora-regular-webfont.ttf') format('truetype'),
-  url('#{$url-font}lora-regular-webfont.svg#loraregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
-}
 
 
 //font size settings
 
 
 html, body {
+  font-family: 'IBM Plex Sans', sans-serif;
   //line-height: 2.5em;
   font-size: 16px;
 }
@@ -42,20 +29,28 @@ a {
   color: $black;
   cursor: pointer;
   &:visited {
-    //color: $gray;
+
   }
   &:hover {
-    color: $dark-gray;
     text-decoration: none;
 
   }
   &:active {
-    color: $light-gray;
+    text-decoration: none;
 
   }
 }
 
 //TEXT
+
+.text{
+  font-size: $fz;
+  &--large{
+    font-size: $fz-lg;
+
+  }
+}
+
 
 p {
 
@@ -68,3 +63,17 @@ p {
 .center-text {
   text-align: center;
 }
+
+h1{
+  font-size: $h1;
+
+}
+
+h2{
+  font-size: $h2;
+}
+
+h3{
+  font-size: $h3;
+}
+

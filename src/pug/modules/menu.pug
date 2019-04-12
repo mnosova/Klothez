@@ -1,17 +1,15 @@
 block PrimaryNavigation
-  - var NavItems = [{'url':'main','title':'Main'},{'url':'home','title':'Home'},{'url':'about','title':'About Us'},{'url':'projects','title':'Our Projects'},{'url':'contacts','title':'Contact Us'}];
-  - var SiteItems = [{'url':'main','title':'Main'},{'url':'about','title':'About Us'},{'url':'projects','title':'Our Projects'},{'url':'contacts','title':'Contact Us'}]
-    if PageID !== 'nav'
-      ul
-        each page,i in NavItems
-          if PageID === page.url
-            li
-              a(class="active", href= page.url + '.html')= page.title
-          else
-            li
-              a(href= page.url + '.html')= page.title
-    else
-      ul
-        each page,i in SiteItems
-            li
-              a(href= page.url + '.html')= page.title
+  nav.header__menu
+    ul.header__navigation
+      li.header__navigation_main-category: a(href="#") Женщинам
+        ul.header__navigation_category-content
+          li: a(href="#") Одежда
+          li: a(href="#") Обувь
+          li: a(href="#") Сумки и аксессуары
+          li: a(href="#") Распродажа
+      li.header__navigation_main-category: a(href="#")  Мужчинам
+        ul.header__navigation_category-content
+          li: a(href="#") Одежда
+          li: a(href="#") Обувь
+          li: a(href="#") Сумки и аксессуары
+          li: a(href="#") Распродажа

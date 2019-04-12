@@ -1,18 +1,14 @@
-//html-scss-template
 'use strict';
 
 const gulp = require('gulp'),
     pug = require('gulp-pug'),
     scss = require('gulp-scss'),
     browserSync = require('browser-sync'),
-    uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     del = require('del'),
     imagemin = require('gulp-imagemin'),
     sourcemaps = require('gulp-sourcemaps'),
     cleanCSS = require('gulp-clean-css'),
-    responsive = require('gulp-responsive'),
-    imageResize = require('gulp-image-resize'),
     spritesmith = require('gulp.spritesmith'),
     svgmin = require('gulp-svgmin'),
     cheerio = require('gulp-cheerio'),
