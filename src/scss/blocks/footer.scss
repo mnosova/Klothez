@@ -1,0 +1,31 @@
+.footer {
+  padding: 52px 0;
+  font-size: $fz-sm;
+  border-top: 1px solid $element-bg-color;
+
+  &__payment-list {
+    margin-bottom: 10px;
+    li {
+      margin-right: 10px;
+    }
+  }
+  &__social-list {
+
+    li {
+      margin-right: 20px;
+    }
+  }
+  &__block-nav {
+flex-basis: 26%;
+  }
+  &__nav-list {
+    &:first-child {
+      margin-right: auto;
+    }
+
+  }
+  &__text {
+    margin-top: 20px;
+  }
+
+}

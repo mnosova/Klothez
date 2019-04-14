@@ -41,7 +41,7 @@
   }
 }
 
-@include media-breakpoint-up(xs) {
+@include media-breakpoint-up(sm) {
   .row {
 
     flex-direction: column;

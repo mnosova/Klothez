@@ -8,6 +8,7 @@ html, body {
   font-family: 'IBM Plex Sans', sans-serif;
   //line-height: 2.5em;
   font-size: 16px;
+  line-height: 1.4em;
 }
 
 @include media-breakpoint-up(md) {
@@ -53,10 +54,10 @@ a {
 
 
 p {
+  //
+  //font-size: $fz-lg;
 
-  font-size: $fz-lg;
-  line-height: 1.4;
-  margin: 0 0 15px;
+  //margin: 0 0 15px;
 }
 
 //usage class

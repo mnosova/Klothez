@@ -321,9 +321,9 @@ optgroup {
 .no-column {
   flex-direction: row; }
 
-.row {
-  flex-direction: column; }
-
+@media (max-width: 960px) {
+  .row {
+    flex-direction: column; } }
 .col {
   flex-basis: 0;
   flex-grow: 1;
@@ -746,7 +746,8 @@ optgroup {
     margin-bottom: auto; } }
 html, body {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.4em; }
 
 @media (max-width: 1024px) {
   html, body {
@@ -766,11 +767,6 @@ a {
   font-size: 14px; }
   .text--large {
     font-size: 18px; }
-
-p {
-  font-size: 18px;
-  line-height: 1.4;
-  margin: 0 0 15px; }
 
 .center-text {
   text-align: center; }
@@ -832,6 +828,9 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
   padding: 0 4.5rem;
   margin: 0 auto; }
 
+.icon {
+  display: inline-block; }
+
 .icon--user {
   position: relative;
   padding-left: 1.2rem; }
@@ -847,6 +846,125 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
     width: 14px;
     top: 50%;
     transform: translate(-25%, -50%);
+    left: 0; }
+
+.icon--fb {
+  position: relative;
+  padding-left: 9px; }
+  .icon--fb:before {
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../img/icons/soc-fb.svg"); }
+  .icon--fb:before {
+    height: 16px;
+    width: 9px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0; }
+
+.icon--inst {
+  position: relative;
+  padding-left: 8px; }
+  .icon--inst:before {
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../img/icons/soc-inst.svg"); }
+  .icon--inst:before {
+    height: 18px;
+    width: 18px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0; }
+
+.icon--google {
+  position: relative;
+  padding-left: 28px; }
+  .icon--google:before {
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../img/icons/soc-gl.svg"); }
+  .icon--google:before {
+    height: 18px;
+    width: 28px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0; }
+
+.icon--yt {
+  position: relative;
+  padding-left: 23px; }
+  .icon--yt:before {
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../img/icons/soc-yt.svg"); }
+  .icon--yt:before {
+    height: 16px;
+    width: 23px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0; }
+
+.icon--master {
+  position: relative;
+  padding-left: 28px; }
+  .icon--master:before {
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../img/icons/pay-mastercard.svg"); }
+  .icon--master:before {
+    height: 18px;
+    width: 28px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0; }
+
+.icon--visa {
+  position: relative;
+  padding-left: 48px; }
+  .icon--visa:before {
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../img/icons/pay-visa.svg"); }
+  .icon--visa:before {
+    height: 15px;
+    width: 48px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0; }
+
+.icon--mir {
+  position: relative;
+  padding-left: 57px; }
+  .icon--mir:before {
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../img/icons/pay-mir.svg"); }
+  .icon--mir:before {
+    height: 17px;
+    width: 57px;
+    top: 50%;
+    transform: translate(0, -50%);
     left: 0; }
 
 header {
@@ -923,5 +1041,22 @@ header {
         text-decoration: none; }
       .header-secondmenu__navigation_category.error a {
         color: #f82c4b; }
+
+.footer {
+  padding: 52px 0;
+  font-size: 12px;
+  border-top: 1px solid #ededed; }
+  .footer__payment-list {
+    margin-bottom: 10px; }
+    .footer__payment-list li {
+      margin-right: 10px; }
+  .footer__social-list li {
+    margin-right: 20px; }
+  .footer__block-nav {
+    flex-basis: 26%; }
+  .footer__nav-list:first-child {
+    margin-right: auto; }
+  .footer__text {
+    margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -17,6 +17,9 @@
   margin: 0 auto;
 }
 //icons
+.icon{
+  display: inline-block;
+}
 .icon--user {
   @include before-svg-icon(1.2rem, user);
   &:before {
@@ -29,6 +32,91 @@
   }
 
 }
+.icon--fb {
+  @include before-svg-icon(9px, soc-fb);
+  &:before {
+    height: 16px;
+    width: 9px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+
+  }
+
+}
+.icon--inst{
+  @include before-svg-icon(8px, soc-inst);
+  &:before {
+    height: 18px;
+    width: 18px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+
+  }
+
+}
+.icon--google {
+  @include before-svg-icon(28px, soc-gl);
+  &:before {
+    height: 18px;
+    width: 28px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+
+  }
+
+}
+.icon--yt {
+  @include before-svg-icon(23px,  soc-yt);
+  &:before {
+    height: 16px;
+    width: 23px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+
+  }
+
+}
+.icon--master {
+  @include before-svg-icon(28px, pay-mastercard);
+  &:before {
+    height: 18px;
+    width: 28px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+
+  }
+
+}
+.icon--visa {
+  @include before-svg-icon(48px, pay-visa);
+  &:before {
+    height: 15px;
+    width: 48px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+
+  }
+}
+
+.icon--mir {
+  @include before-svg-icon(57px, pay-mir);
+  &:before {
+    height: 17px;
+    width: 57px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+
+  }
+
+}
 
 //blocks
 @import "blocks/header";
+@import "blocks/footer";
