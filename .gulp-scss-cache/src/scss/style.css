@@ -867,7 +867,7 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
 
 .icon--inst {
   position: relative;
-  padding-left: 8px; }
+  padding-left: 17px; }
   .icon--inst:before {
     content: ' ';
     position: absolute;
@@ -876,8 +876,8 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
     background-position: center;
     background-image: url("../img/icons/soc-inst.svg"); }
   .icon--inst:before {
-    height: 18px;
-    width: 18px;
+    height: 17px;
+    width: 17px;
     top: 50%;
     transform: translate(0, -50%);
     left: 0; }
@@ -893,7 +893,7 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
     background-position: center;
     background-image: url("../img/icons/soc-gl.svg"); }
   .icon--google:before {
-    height: 18px;
+    height: 16px;
     width: 28px;
     top: 50%;
     transform: translate(0, -50%);
@@ -928,7 +928,7 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
     background-image: url("../img/icons/pay-mastercard.svg"); }
   .icon--master:before {
     height: 18px;
-    width: 28px;
+    width: 27px;
     top: 50%;
     transform: translate(0, -50%);
     left: 0; }
@@ -945,7 +945,7 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
     background-image: url("../img/icons/pay-visa.svg"); }
   .icon--visa:before {
     height: 15px;
-    width: 48px;
+    width: 47px;
     top: 50%;
     transform: translate(0, -50%);
     left: 0; }
@@ -961,7 +961,7 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
     background-position: center;
     background-image: url("../img/icons/pay-mir.svg"); }
   .icon--mir:before {
-    height: 17px;
+    height: 16px;
     width: 57px;
     top: 50%;
     transform: translate(0, -50%);
@@ -1000,7 +1000,7 @@ header {
   .header-menu__logo {
     display: block;
     width: 120px;
-    height: 30px;
+    height: 29px;
     background-image: url("../img/icons/logo.svg");
     margin: auto auto auto 0; }
   .header-menu__search {
@@ -1051,7 +1051,8 @@ header {
     .footer__payment-list li {
       margin-right: 10px; }
   .footer__social-list li {
-    margin-right: 20px; }
+    margin-right: 20px;
+    display: inline-block; }
   .footer__block-nav {
     flex-basis: 26%; }
   .footer__nav-list:first-child {

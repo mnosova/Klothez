@@ -13,16 +13,16 @@
 
     li {
       margin-right: 20px;
+      display: inline-block;
     }
   }
   &__block-nav {
-flex-basis: 26%;
+    flex-basis: 26%;
   }
   &__nav-list {
     &:first-child {
       margin-right: auto;
     }
-
   }
   &__text {
     margin-top: 20px;
