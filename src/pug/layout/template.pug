@@ -19,12 +19,11 @@ html(lang="ru-RU")
         block styles
             link(rel="stylesheet", href="css/style.min.css")
     body
-        .content
-            include ../modules/header
-            .page(class=pageClass)
-                |
-                block content
-            include ../modules/footer
-        block scripts
-            script(src="js/jquery.min.js", type="text/javascript")
-            script(src="js/main.min.js", type="text/javascript")
+        include ../modules/header
+        .page(class=pageClass)
+            |
+            block content
+        include ../modules/footer
+    block scripts
+        script(src="js/jquery.min.js", type="text/javascript")
+        script(src="js/main.min.js", type="text/javascript")

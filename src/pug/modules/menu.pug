@@ -1,15 +1,17 @@
 block PrimaryNavigation
-  nav.header__menu
-    ul.header__navigation
-      li.header__navigation_main-category: a(href="#") Женщинам
-        ul.header__navigation_category-content
-          li: a(href="#") Одежда
-          li: a(href="#") Обувь
-          li: a(href="#") Сумки и аксессуары
-          li: a(href="#") Распродажа
-      li.header__navigation_main-category: a(href="#")  Мужчинам
-        ul.header__navigation_category-content
-          li: a(href="#") Одежда
-          li: a(href="#") Обувь
-          li: a(href="#") Сумки и аксессуары
-          li: a(href="#") Распродажа
+  .header-menu
+    .content-container.row.no-column
+      div: a.header-menu__logo
+      ul.header-menu__navigation
+        li.header-menu__navigation_category.js-show Женщинам
+        li.header-menu__navigation_category Мужчинам
+      form.header-menu__search.icon--search#header-search
+          input.header-menu__search-input(type="text" placeholder="Поиск товаров")
+      div.header-menu__login.icon--user Войти
+  nav.header-secondmenu
+    .content-container
+      ul(data-content="man").header-secondmenu__navigation
+        li.header-secondmenu__navigation_category: a(href="#") Одежда
+        li.header-secondmenu__navigation_category: a(href="#") Обувь
+        li.header-secondmenu__navigation_category: a(href="#") Сумки и аксессуары
+        li.header-secondmenu__navigation_category.error: a(href="#") Распродажа

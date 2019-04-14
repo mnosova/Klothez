@@ -11,31 +11,34 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="content">
-      <header>
-        <nav class="header__menu">
-          <ul class="header__navigation">
-            <li class="header__navigation_main-category"><a href="#">Женщинам
-                <ul class="header__navigation_category-content">
-                  <li><a href="#">Одежда</a></li>
-                  <li><a href="#">Обувь</a></li>
-                  <li><a href="#">Сумки и аксессуары</a></li>
-                  <li><a href="#">Распродажа</a></li>
-                </ul></a></li>
-            <li class="header__navigation_main-category"><a href="#"> Мужчинам
-                <ul class="header__navigation_category-content">
-                  <li><a href="#">Одежда</a></li>
-                  <li><a href="#">Обувь</a></li>
-                  <li><a href="#">Сумки и аксессуары</a></li>
-                  <li><a href="#">Распродажа</a></li>
-                </ul></a></li>
+    <header>
+      <div class="header-menu">
+        <div class="content-container row no-column">
+          <div><a class="header-menu__logo"></a></div>
+          <ul class="header-menu__navigation">
+            <li class="header-menu__navigation_category js-show">Женщинам</li>
+            <li class="header-menu__navigation_category">Мужчинам</li>
           </ul>
-        </nav>
-      </header>
-      <div class="page page__delivery">
+          <form class="header-menu__search icon--search" id="header-search">
+            <input class="header-menu__search-input" type="text" placeholder="Поиск товаров">
+          </form>
+          <div class="header-menu__login icon--user">Войти</div>
+        </div>
       </div>
+      <nav class="header-secondmenu">
+        <div class="content-container">
+          <ul class="header-secondmenu__navigation" data-content="man">
+            <li class="header-secondmenu__navigation_category"><a href="#">Одежда</a></li>
+            <li class="header-secondmenu__navigation_category"><a href="#">Обувь</a></li>
+            <li class="header-secondmenu__navigation_category"><a href="#">Сумки и аксессуары</a></li>
+            <li class="header-secondmenu__navigation_category error"><a href="#">Распродажа</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="page page__delivery">
     </div>
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/main.min.js" type="text/javascript"></script>
   </body>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/main.min.js" type="text/javascript"></script>
 </html>
