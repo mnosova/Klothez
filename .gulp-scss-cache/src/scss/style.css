@@ -1206,4 +1206,47 @@ header {
 .delivery-methods__text {
   margin-top: 10px; }
 
+.section__delivery-faq {
+  padding: 60px 0; }
+
+.delivery-faq__list {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ededed; }
+.delivery-faq__list-item {
+  border-top: 1px solid #ededed;
+  font-weight: 600;
+  padding: 20px 0;
+  position: relative;
+  cursor: pointer; }
+  .delivery-faq__list-item:before {
+    content: ' ';
+    position: absolute;
+    top: 30px;
+    left: initial;
+    width: 17px;
+    height: 1px;
+    display: block;
+    background: #000;
+    transform: rotate(45deg);
+    right: 0; }
+  .delivery-faq__list-item:after {
+    content: ' ';
+    position: absolute;
+    top: 30px;
+    left: initial;
+    width: 17px;
+    height: 1px;
+    display: block;
+    background: #000;
+    transform: rotate(-45deg);
+    right: 0; }
+  .delivery-faq__list-item.js-show:before {
+    transform: rotate(90deg); }
+  .delivery-faq__list-item.js-show:after {
+    transform: rotate(180deg); }
+.delivery-faq__content {
+  font-weight: normal;
+  margin-top: 10px; }
+
 /*# sourceMappingURL=style.css.map */
