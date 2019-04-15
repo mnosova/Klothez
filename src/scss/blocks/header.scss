@@ -46,6 +46,8 @@ header {
     flex-grow: 2;
     input.header-menu__search-input {
       padding-left: 58px;
+      background-color: $element-bg-color !important;
+      border: none;
       &::placeholder {
         font-size: $fz-sm;
         text-transform: uppercase;

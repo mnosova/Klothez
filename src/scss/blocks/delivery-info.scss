@@ -1,0 +1,33 @@
+.delivery-info {
+  &__list {
+    margin: 50px 0;
+  }
+  &__list-item {
+    flex-basis: 22%;
+  }
+  &__text {
+
+    margin-top: 25px;
+  }
+}
+
+.section__delivery-search {
+  background: $element-bg-color;
+  padding: 25px 0;
+  &__blcok {
+    width: 40%;
+  }
+}
+
+.delivery-search {
+  background: $element-bg-color;
+  padding: 25px 0;
+  &__block {
+    width: 32%;
+    padding-right: 10px;
+    &:last-child {
+      width: auto;
+    }
+  }
+}
+

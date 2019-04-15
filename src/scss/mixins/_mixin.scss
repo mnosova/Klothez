@@ -267,6 +267,7 @@
     display: inline-block;
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     @include svg-icon($icon);
   }
 
@@ -391,12 +392,12 @@
 
 }
 
-@mixin number-list-item($padding) {
+@mixin number-list-item($padding, $item) {
 
   position: relative;
   padding-left: $padding;
   &:before {
-    content: counter($item) $symbol;
+    content: counter($item);
     counter-increment: $item;
     position: absolute;
     left: 0;
