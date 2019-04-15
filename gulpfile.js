@@ -47,6 +47,7 @@ const paths = {
         js: 'src/js/'
     },
     build: {
+        build: './build/',
         css: './build/css',
         js: './build/js',
         fonts: 'build/fonts',
@@ -120,8 +121,9 @@ function scripts() {
 
 //build
 
-function clean() {
-    return del.sync(paths.clean.build);
+function clean(cn) {
+     del.sync(paths.clean.build);
+    cn();
 
 }
 
@@ -221,9 +223,9 @@ gulp.task('watch', gulp.series(styles, pugCompile, scripts, gulp.parallel(browse
 
 
 //build
-gulp.task('build', gulp.series(clean, css, js, fonts, img, html, function () {
-    return  del.sync(paths.build.img);
-
+gulp.task('build', gulp.series(clean, css, js, fonts, img, html, function (cn) {
+      del.sync(paths.clean.img);
+cn();
 }));
 
 
