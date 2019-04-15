@@ -1,0 +1,36 @@
+
+.section__delivery-methods {
+  padding-top: 60px;
+
+}
+
+.delivery-methods {
+
+  &__block {
+    width: 49%;
+    margin-top: 25px;
+
+  }
+  &__image {
+    max-width: 100%;
+  }
+  &__list {
+    margin-top: 10px;
+  }
+  &__list-item {
+    padding: 5px 0;
+    @include before-svg-icon(25px, check);
+
+    &:before {
+      width: 15px;
+      height: 14px;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 0;
+    }
+
+  }
+  &__text {
+    margin-top: 10px;
+  }
+}

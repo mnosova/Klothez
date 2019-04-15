@@ -11,23 +11,4 @@
   }
 }
 
-.section__delivery-search {
-  background: $element-bg-color;
-  padding: 25px 0;
-  &__blcok {
-    width: 40%;
-  }
-}
-
-.delivery-search {
-  background: $element-bg-color;
-  padding: 25px 0;
-  &__block {
-    width: 32%;
-    padding-right: 10px;
-    &:last-child {
-      width: auto;
-    }
-  }
-}
 

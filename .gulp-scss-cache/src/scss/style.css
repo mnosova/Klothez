@@ -796,7 +796,7 @@ input[type="search"], input[type="text"], input[type="password"], input[type="te
   border-radius: 0.25em; }
   input[type="search"]::placeholder, input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="url"]::placeholder, textarea::placeholder {
     font-size: 12px;
-    color: #7A8F99; }
+    color: #000; }
 
 .form-field {
   margin-top: 20px; }
@@ -1174,5 +1174,36 @@ header {
     padding-right: 10px; }
     .delivery-search__block:last-child {
       width: auto; }
+
+.section__delivery-methods {
+  padding-top: 60px; }
+
+.delivery-methods__block {
+  width: 49%;
+  margin-top: 25px; }
+.delivery-methods__image {
+  max-width: 100%; }
+.delivery-methods__list {
+  margin-top: 10px; }
+.delivery-methods__list-item {
+  padding: 5px 0;
+  position: relative;
+  padding-left: 25px; }
+  .delivery-methods__list-item:before {
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/icons/check.svg"); }
+  .delivery-methods__list-item:before {
+    width: 15px;
+    height: 14px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0; }
+.delivery-methods__text {
+  margin-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
