@@ -1,17 +1,26 @@
 .section__delivery-partners {
-  padding-top: 60px;
+  padding-top:3.75rem;
   border-top: 1px solid $element-bg-color;
+  @include media-breakpoint-up(xs){
+    padding-top:2rem;
+
+  }
 
 }
 
 .delivery-partners {
 
   &__image {
-    padding-top: 35px;
+    padding-top: 2.25rem;
     margin: auto 0;
     width: 12%;
     img {
       max-width: 100%;
+
+    }
+    @include media-breakpoint-up(sm){
+      width: 26%
+
     }
   }
 }

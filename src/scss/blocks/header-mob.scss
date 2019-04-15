@@ -1,0 +1,36 @@
+
+.header-mob-menu {
+  display: none;
+  height: 60px;
+  padding: 20px;
+  border-bottom: 1px solid $element-bg-color;
+  @include media-breakpoint-up(sm) {
+    display: block;
+  }
+
+  &__nav {
+    width: 18px;
+    height: 2px;
+    background: $black;
+    position: relative;
+    &:after {
+      @include pseudo(4px, 0, 100%, 2px, block);
+      background: $black;
+    }
+    &:before {
+      @include pseudo(8px, 0, 100%, 2px, block);
+      background: $black;
+
+    }
+  }
+
+
+  &__logo {
+    flex-basis: 40%;
+    margin-left: 2rem;
+
+  }
+  &__login {
+    padding-top: 16px;
+  }
+}

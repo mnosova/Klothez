@@ -1,6 +1,6 @@
 
 .section__delivery-faq {
-  padding: 60px 0;
+  padding: 3.75rem 0;
 
 }
 
@@ -8,15 +8,16 @@
 
   &__list {
     margin-top: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     border-bottom: 1px solid $element-bg-color;
   }
   &__list-item {
     border-top: 1px solid $element-bg-color;
     font-weight: 600;
-    padding: 20px 0;
+    padding: 20px 30px 20px 0;
     position: relative;
     cursor: pointer;
+    font-size: $fz;
     &:before {
       @include pseudo(30px, initial, 17px, 1px, block);
       background: $black;
@@ -49,6 +50,7 @@
   &__content {
     font-weight: normal;
     margin-top: 10px;
+    font-size: $fz;
 
   }
 }

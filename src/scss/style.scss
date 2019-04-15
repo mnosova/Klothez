@@ -15,10 +15,21 @@
   max-width: 1440px;
   padding: 0 4.5rem;
   margin: 0 auto;
+  @include media-breakpoint-up(sm){
+    max-width: 90%;
+    padding: 0;
+  }
+  @include media-breakpoint-up(xs){
+    max-width: 95%;
+  }
 }
 .page{
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 6.25rem;
+  padding-bottom: 3.125rem;
+  @include media-breakpoint-up(xs){
+    padding-top: 1.5rem;
+
+  }
 }
 //icons
 .icon{
@@ -36,6 +47,55 @@
   }
 
 }
+.icon--search {
+  @include before-svg-icon(16px, search);
+  &:before {
+    height: 16px;
+    width: 16px;
+    top: 50%;
+    transform: translate(-25%, -50%);
+    left: 0;
+
+  }
+
+}
+.icon--logo {
+  @include before-svg-icon(84px, logo);
+  &:before {
+    height: 20px;
+    width: 84px;
+    top: 50%;
+    transform: translate(-25%, -50%);
+    left: 0;
+
+  }
+
+}
+.icon--heart {
+  @include before-svg-icon(15px, heart);
+  &:before {
+    height: 14px;
+    width: 15px;
+    top: 50%;
+    transform: translate(-25%, -50%);
+    left: 0;
+
+  }
+
+}
+.icon--cart {
+  @include before-svg-icon(18px, cart);
+  &:before {
+    height: 16px;
+    width: 18px;
+    top: 50%;
+    transform: translate(-25%, -50%);
+    left: 0;
+
+  }
+
+}
+
 .icon--fb {
   @include before-svg-icon(9px, soc-fb);
   &:before {
@@ -179,6 +239,7 @@
 
 //blocks
 @import "blocks/header";
+@import "blocks/header-mob";
 @import "blocks/footer";
 @import "blocks/delivery-info";
 @import "blocks/delivery-search";

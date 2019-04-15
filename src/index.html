@@ -38,13 +38,23 @@
           <li class="header-secondmenu__navigation_category"><a href="#">Сумки и аксессуары</a></li>
         </ul>
       </nav>
+      <div class="header-mob-menu">
+        <div class="content-container row no-column">
+          <div class="header-mob-menu__nav icon--humburger"></div>
+          <div class="header-mob-menu__logo icon--logo"></div>
+          <div class="header-mob-menu__search icon--search"></div>
+          <div class="header-mob-menu__login icon--user"></div>
+          <div class="header-mob-menu__favor icon--heart"></div>
+          <div class="header-mob-menu__cart icon--cart"></div>
+        </div>
+      </div>
     </header>
     <div class="page page__delivery">
       <section class="section__delivery-info center-text">
         <div class="container">
           <h1>Доставка Klothez</h1>
           <p class="text text--large">Узнайте о преимуществах каждого способа доставки и выберите самый удобный</p>
-          <ul class="delivery-info__list row">
+          <ul class="delivery-info__list row no-column row-sm-center">
             <li class="delivery-info__list-item icon icon--icon-1">
               <p class="delivery-info__text"><b>Примерка перед покупкой</b></p>
             </li>
@@ -64,7 +74,7 @@
         <div class="container">
           <p class="text text--large"><b>Узнать подробнее о способах, скроках и ценах доставки в ваше городе</b></p>
           <form id="delivery-city">
-            <div class="form-field row row-center">
+            <div class="form-field row row-center no-column">
               <div class="delivery-search__block">
                 <input class="city-select" type="text" placeholder="Санкт-Петербург">
               </div>
@@ -126,7 +136,7 @@
       </section>
       <section class="section__delivery-partners">
         <h2 class="center-text">Наши партнеры</h2>
-        <div class="content-container row row-around">
+        <div class="content-container row row-around no-column">
           <div class="delivery-partners__image"><img src="img/partner-5.png" srcset="img/partner-5@2x.png 1.5x, img/partner-5@3x.png 2.5x"></div>
           <div class="delivery-partners__image"><img src="img/partner-1.png" srcset="img/partner-1@2x.png 1.5x, img/partner-1@3x.png 2.5x"></div>
           <div class="delivery-partners__image"><img src="img/partner-2.png" srcset="img/partner-2@2x.png 1.5x, img/partner-2@3x.png 2.5x"></div>
@@ -137,8 +147,8 @@
       </section>
     </div>
     <footer class="footer">
-      <div class="content-container row">
-        <div class="footer__block footer__block-contact">
+      <div class="content-container row ordered">
+        <div class="footer__block footer__block-contact order-sm-4 center-text-sm">
           <p>Москва, ул. Авиамоторная дом 50 с2</p>
           <p><a href="tel:+78002007456"><b>8 800 200-7456</b></a></p>
           <p><a href="mailto:info@klothez.ru">info@klothez.ru</a></p>
@@ -147,7 +157,7 @@
             <p>с 10.00 до 20.00, ежедневно</p>
           </div>
         </div>
-        <div class="footer__block footer__block-nav row no-column">
+        <div class="footer__block footer__block-nav row no-column order-sm-1">
           <ul class="footer__nav-list">
             <li><a href="#">О компании</a></li>
             <li><a href="#">Контакты</a></li>
@@ -163,7 +173,7 @@
             <li><a href="#">Блог</a></li>
           </ul>
         </div>
-        <div class="footer__block footer__block_social">
+        <div class="footer__block footer__block_social order-sm-2 center-text-sm">
           <p><b>Мы в социальных сетях</b></p>
           <ul class="footer__social-list">
             <li><a class="icon icon--fb"><a href="#"></a></a></li>
@@ -172,7 +182,7 @@
             <li><a class="icon icon--yt"><a href="#"></a></a></li>
           </ul>
         </div>
-        <div class="footer__block footer__block_payment">
+        <div class="footer__block footer__block_payment order-sm-3 center-text-sm">
           <p><b>Принимаем к оплате</b></p>
           <ul class="footer__payment-list">
             <li class="icon icon--master"></li>

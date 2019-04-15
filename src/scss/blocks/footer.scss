@@ -1,8 +1,12 @@
 .footer {
-  padding: 52px 0;
+  padding: 3.25rem 0;
   font-size: $fz-sm;
   border-top: 1px solid $element-bg-color;
   line-height: 2em;
+  @include media-breakpoint-up(xs) {
+
+    padding: 2rem 0;
+  }
 
   &__payment-list {
     margin-bottom: 10px;
@@ -10,6 +14,27 @@
       margin-right: 10px;
     }
   }
+
+  &__block_social {
+    @include media-breakpoint-up(sm) {
+      padding-top: 2rem;
+      border-top: 1px solid $element-bg-color;
+    }
+
+  }
+  &__block_payment {
+    @include media-breakpoint-up(sm) {
+      padding-top: 2rem;
+    }
+
+  }
+  &__block-contact {
+    @include media-breakpoint-up(sm) {
+      padding-top: 2rem;
+    }
+
+  }
+
   &__social-list {
 
     li {
@@ -19,14 +44,26 @@
   }
   &__block-nav {
     flex-basis: 26%;
+    @include media-breakpoint-up(sm) {
+
+      max-width: 80%;
+    }
+
+    @include media-breakpoint-up(sm) {
+
+      padding-bottom: 2rem;
+    }
   }
   &__nav-list {
+
     &:first-child {
       margin-right: auto;
+
     }
   }
   &__text {
-    margin-top: 20px;
+    margin-top: 0.65rem;
+
   }
 
 }

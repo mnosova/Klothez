@@ -1,6 +1,6 @@
 .section__delivery-search {
   background: $element-bg-color;
-  padding: 25px 0;
+  padding: 1.5625rem 0;
   &__blcok {
     width: 40%;
   }
@@ -15,5 +15,11 @@
     &:last-child {
       width: auto;
     }
+    @include media-breakpoint-up(xs){
+      width: auto;
+      padding-right:0;
+
+    }
   }
+
 }

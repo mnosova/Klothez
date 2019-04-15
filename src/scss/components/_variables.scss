@@ -11,14 +11,11 @@ $url-icons:  "../img/icons/";
 $fz: 14px;
 $fz-lg: 18px;
 $fz-sm:12px;
-//$fz-md: 16px;
-//$fz-sm: 14px;
-//$fz-xs: 12px;
-
 $lg-text: 40px;
-$sm-text: 40px;
+
 
 $h1:36px;
+$h1-xs: 26px;
 $h2: 18px;
 $h3: 24px;
 
@@ -46,6 +43,7 @@ $enable-grid-classes:true !default;
 
 $grid-breakpoints: (
         xxs: 0,
+        xs: 320px,
         sm: 960px,
         md: 1024px
 
@@ -62,9 +60,8 @@ $grid-breakpoints: (
 
 $container-max-widths: (
 
-        sm: 90%
-  //xs: 90%,
-  //sm: 880px,
+        sm: 90%,
+        xs: 95%
 
 ) !default;
 

@@ -1,12 +1,8 @@
-
-
-
 //font size settings
-
 
 html, body {
   font-family: 'IBM Plex Sans', sans-serif;
-  //line-height: 2.5em;
+
   font-size: 16px;
   line-height: 1.4;
 }
@@ -46,7 +42,7 @@ a {
 
 .text{
   font-size: $fz;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   &--large{
     font-size: $fz-lg;
     line-height: normal;
@@ -55,21 +51,23 @@ a {
 }
 
 
-p {
-  //
-  //font-size: $fz-lg;
-
-  //margin: 0 0 15px;
-}
 
 //usage class
 .center-text {
   text-align: center;
 }
+.center-text-sm{
+
+  @include media-breakpoint-up(sm){
+    text-align: center;
+  }
+}
 
 h1{
   font-size: $h1;
-
+  @include media-breakpoint-up(xs){
+    font-size:$h1-xs;
+  }
 }
 
 h2{
@@ -82,5 +80,9 @@ h2{
 h3{
   font-size: $h3;
   margin-top: 10px;
+  @include media-breakpoint-up(xs){
+
+    font-size:$fz-lg;
+  }
 }
 

@@ -1,9 +1,20 @@
 .delivery-info {
   &__list {
-    margin: 50px 0;
+    margin-top: 3.125rem;
+    @include media-breakpoint-up(xs){
+      margin-top: 2.5rem;
+
+    }
   }
   &__list-item {
     flex-basis: 22%;
+    margin-bottom:  3.125rem;
+    @include media-breakpoint-up(sm) {
+      flex-basis: 35%;
+    }
+    @include media-breakpoint-up(xs) {
+      flex-basis: 45%;
+    }
   }
   &__text {
 
