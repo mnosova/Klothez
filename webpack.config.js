@@ -3,7 +3,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const config = {
     mode: 'development',
     entry: {
-        form: './src/js/src/main.js'
+        main: './src/js/src/main.js'
     },
     output: {
         filename: "[name].js"
