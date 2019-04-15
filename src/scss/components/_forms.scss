@@ -34,7 +34,7 @@ input:-webkit-autofill {
 @mixin btn {
   text-decoration: none;
   display: inline-block;
-  padding: 0.875rem 1.875rem;
+  padding: 1rem 1.875rem;
   background-color: $element-btn-color;
   cursor: pointer;
   text-transform: uppercase;

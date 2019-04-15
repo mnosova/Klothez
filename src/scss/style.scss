@@ -109,10 +109,10 @@
 
 }
 .icon--inst{
-  @include before-svg-icon(17px, soc-inst);
+  @include before-svg-icon(18px, soc-inst);
   &:before {
-    height: 17px;
-    width: 17px;
+    height: 18px;
+    width: 18px;
     top: 50%;
     transform: translate(0, -50%);
     left: 0;

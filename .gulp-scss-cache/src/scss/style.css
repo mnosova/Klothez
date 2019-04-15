@@ -241,7 +241,7 @@ optgroup {
   @media (max-width: 960px) {
     .container {
       max-width: 90%; } }
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     .container {
       max-width: 95%; } }
 
@@ -284,7 +284,7 @@ optgroup {
       margin-right: 0.625rem; }
   .row.no-column {
     flex-direction: row; }
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     .row.row-xs-around {
       justify-content: space-around; }
     .row.row-xs-between {
@@ -477,7 +477,7 @@ optgroup {
   margin-top: auto;
   margin-bottom: auto; }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .col-xs {
     flex-basis: 0;
     flex-grow: 1;
@@ -935,7 +935,7 @@ a {
 
 h1 {
   font-size: 36px; }
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     h1 {
       font-size: 26px; } }
 
@@ -948,7 +948,7 @@ h2 {
 h3 {
   font-size: 24px;
   margin-top: 10px; }
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     h3 {
       font-size: 18px; } }
 
@@ -977,7 +977,7 @@ input:-webkit-autofill {
 button, input[type="submit"], input[type="reset"], input[type="button"] {
   text-decoration: none;
   display: inline-block;
-  padding: 0.875rem 1.875rem;
+  padding: 1rem 1.875rem;
   background-color: #f1df5e;
   cursor: pointer;
   text-transform: uppercase;
@@ -985,7 +985,7 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
   color: #000;
   font-size: 14px;
   border-radius: 0.25em; }
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     button, input[type="submit"], input[type="reset"], input[type="button"] {
       font-size: 12px; } }
 
@@ -997,14 +997,14 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
     .content-container {
       max-width: 90%;
       padding: 0; } }
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     .content-container {
       max-width: 95%; } }
 
 .page {
   padding-top: 6.25rem;
   padding-bottom: 3.125rem; }
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     .page {
       padding-top: 1.5rem; } }
 
@@ -1121,7 +1121,7 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
 
 .icon--inst {
   position: relative;
-  padding-left: 17px; }
+  padding-left: 18px; }
   .icon--inst:before {
     content: ' ';
     position: absolute;
@@ -1131,8 +1131,8 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
     background-repeat: no-repeat;
     background-image: url("../img/icons/soc-inst.svg"); }
   .icon--inst:before {
-    height: 17px;
-    width: 17px;
+    height: 18px;
+    width: 18px;
     top: 50%;
     transform: translate(0, -50%);
     left: 0; }
@@ -1437,7 +1437,7 @@ header {
   font-size: 12px;
   border-top: 1px solid #ededed;
   line-height: 2em; }
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     .footer {
       padding: 2rem 0; } }
   .footer__payment-list {
@@ -1457,6 +1457,9 @@ header {
   .footer__social-list li {
     margin-right: 20px;
     display: inline-block; }
+    @media (max-width: 960px) {
+      .footer__social-list li {
+        margin: 0 10px; } }
   .footer__block-nav {
     flex-basis: 26%; }
     @media (max-width: 960px) {
@@ -1472,7 +1475,7 @@ header {
 
 .delivery-info__list {
   margin-top: 3.125rem; }
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     .delivery-info__list {
       margin-top: 2.5rem; } }
 .delivery-info__list-item {
@@ -1481,7 +1484,7 @@ header {
   @media (max-width: 960px) {
     .delivery-info__list-item {
       flex-basis: 35%; } }
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     .delivery-info__list-item {
       flex-basis: 45%; } }
 .delivery-info__text {
@@ -1500,15 +1503,16 @@ header {
     width: 32%;
     padding-right: 10px; }
     .delivery-search__block:last-child {
-      width: auto; }
-    @media (max-width: 320px) {
+      width: auto;
+      margin-left: -5px; }
+    @media (max-width: 480px) {
       .delivery-search__block {
         width: auto;
         padding-right: 0; } }
 
 .section__delivery-methods {
   padding-top: 3.75rem; }
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     .section__delivery-methods {
       padding-top: 3rem; } }
 
@@ -1595,7 +1599,7 @@ header {
 .section__delivery-partners {
   padding-top: 3.75rem;
   border-top: 1px solid #ededed; }
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     .section__delivery-partners {
       padding-top: 2rem; } }
 
