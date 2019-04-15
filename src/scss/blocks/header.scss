@@ -1,6 +1,7 @@
 header {
   font-size: $fz-sm;
   text-transform: uppercase;
+  position: relative;
 
 }
 
@@ -76,9 +77,16 @@ cursor: pointer;
 }
 
 .header-secondmenu {
-  border-bottom: 1px solid $element-bg-color;
+  position: relative;
+
   &__navigation {
-    padding: 16px 0 19px;
+    display: none;
+    padding: 16px 4.5rem 19px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid $element-bg-color;
 
     &_category {
       display: inline-block;

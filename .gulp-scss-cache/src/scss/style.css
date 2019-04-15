@@ -1058,7 +1058,8 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
 
 header {
   font-size: 12px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  position: relative; }
 
 .header-menu {
   margin: auto 0;
@@ -1123,9 +1124,15 @@ header {
     margin: auto 0 auto 3.75rem; }
 
 .header-secondmenu {
-  border-bottom: 1px solid #ededed; }
+  position: relative; }
   .header-secondmenu__navigation {
-    padding: 16px 0 19px; }
+    display: none;
+    padding: 16px 4.5rem 19px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ededed; }
     .header-secondmenu__navigation_category {
       display: inline-block;
       margin-right: 2.5rem; }
