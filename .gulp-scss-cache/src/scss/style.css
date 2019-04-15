@@ -1241,6 +1241,8 @@ header {
     background: #000;
     transform: rotate(-45deg);
     right: 0; }
+  .delivery-faq__list-item.js-show p {
+    display: none; }
   .delivery-faq__list-item.js-show:before {
     transform: rotate(90deg); }
   .delivery-faq__list-item.js-show:after {
@@ -1248,5 +1250,16 @@ header {
 .delivery-faq__content {
   font-weight: normal;
   margin-top: 10px; }
+
+.section__delivery-partners {
+  padding-top: 60px;
+  border-top: 1px solid #ededed; }
+
+.delivery-partners__image {
+  padding-top: 35px;
+  margin: auto 0;
+  width: 12%; }
+  .delivery-partners__image img {
+    max-width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
