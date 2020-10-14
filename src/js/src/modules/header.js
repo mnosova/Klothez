@@ -1,6 +1,6 @@
 const headerMenu = function () {
     let $bigItem = $('.header-secondmenu__navigation');
-    let $smallItem = $('.header-menu__navigation_category');
+    let $smallItem = $('.header-menu__navigation-category');
     $smallItem.on('mouseenter', function () {
         $bigItem.hide();
         $smallItem.removeClass('js-show');
